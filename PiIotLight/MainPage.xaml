@@ -9,12 +9,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-            <ToggleSwitch x:Name="SwitchOne" Header="Light One" Toggled="SwitchOne_Toggled"  Tag="1"/>
-            <ToggleSwitch x:Name="SwitchTwo" Header="Light Two" Toggled="switchTwo_Toggled" Tag ="2"/>
-            
-                          
-
+            <ToggleSwitch x:Name="SwitchOne" Header="Light One" Toggled="SwitchOne_Toggled"  Tag="1" Width="100" Height="60" MinWidth="100"/>
+            <ToggleSwitch x:Name="SwitchTwo" Header="Light Two" Toggled="switchTwo_Toggled" Tag ="2" Width="100" Height="60" MinWidth="100"/>
+            <ToggleSwitch x:Name="SwitchThree" Header="Time" Toggled="SwitchThree_OnToggled" Tag="3" Width="100" Height="60" MinWidth="100"/>
         </StackPanel>
-                    
+        <TimePicker x:Name="ActivateTime" HorizontalAlignment="Left" VerticalAlignment="Top" ClockIdentifier="12HourClock" Margin="54,355,0,0" Header="Start"/>
+        <Button x:Name="TimeTest" Content="TimeT" HorizontalAlignment="Left" Margin="136,112,0,0" VerticalAlignment="Top"/>
+        <TimePicker x:Name="StopTime" HorizontalAlignment="Left" Margin="54,420,0,0" VerticalAlignment="Top" Header="Stop"/>
+
     </Grid>
 </Page>
